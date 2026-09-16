@@ -31,6 +31,7 @@ function Home() {
   const [creating, setCreating] = useState(false);
 
   const createInterview = async () => {
+    console.log("create clicked");
     setCreating(true);
     const record = await mockSessionApi.createSession();
     writeIdentity(record.meta.id, { name: "Interviewer", role: "interviewer" });
