@@ -37,4 +37,4 @@ export const PALETTE: PaletteItem[] = [
 ];
 
 export const paletteFor = (kind: NodeKind): PaletteItem =>
-  PALETTE.find((p) => p.kind === kind) ?? PALETTE[PALETTE.length - 1];
+  PALETTE.find((p) => p.kind === kind) ?? PALETTE[PALETTE.length - 1]!;
